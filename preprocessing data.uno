@@ -7,8 +7,6 @@ X=dataset[["develop","age","salary"]].values
 X
 y=dataset[["married"]].values
 y
-from sklearn.impute import SimpleImputer
-imputer = SimpleImputer(missing_values="NaN",strategy="mean")
 from sklearn.preprocessing import LabelEncoder
 label_encode_x=LabelEncoder()
 x[:,0]=label_encode_x.fit_transform(x[:,0])
